@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+       
+    
+       
+        <table  style="width: 30rem !important; text-align: center">
+           
+            <h1 class="enter" >ADD CAMERA DETAILS</h1>
+            <tr>
+                <td class="fs-3 "><label  style="font-family:'Teko'; font-size: 40px;color: rgb(18, 18, 75);">Brand</label></td>
+                <td><input type="text"  class="form-control" name="bname" ></td>
+            </tr>
+            <tr>
+                <td class="fs-3"><label style="font-family:'Teko'; font-size: 40px;color: rgb(18, 18, 75);">Image</label></td>
+                <td><input type="file"  class="form-control" name="pic" accept="image/*" required></td>
+            </tr>
+            <tr>
+                <td class="fs-3"><label style="font-family:'Teko'; font-size: 40px;color: rgb(18, 18, 75);">Price</label></td>
+                <td><input type="text"  class="form-control" name="amount"  required></td>
+            </tr>
+            <tr>
+                <td class="fs-3"><label  style="font-family:'Teko'; font-size: 40px; color: rgb(18, 18, 75);">Description</label></td>
+                <td><textarea   class="form-control" name="explain" rows="7" cols="30"></textarea></td>
+      
+            </tr>
+            
+            <tr colspan="2" class="d-flex justify-content-center">
+                <td></td>
+                <td><button type="submit"  class="btn btn-info d-block m-auto mt-5">SUBMIT</button></td>
+            </tr>
+        </table>
+    
+    
+       
+    
+    
+    </form>
+    
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Our cameras section start -->
+
+<h1 style="text-align: center;">CAMERA LIST</h1>
+
+<div class="card-container">
+  {% for c in obj %}
+  <div class="card" style="width: 18rem;">
+    <img src="{{c.image}}" class="card-img-top" alt="..." height="300";width="300" >
+    <div class="card-body" style="height: 350px;">
+      <h5 class="card-title" >{{c.brand}}</h5>
+      <p class="card-text">{{c.description}}</p>
+      <p class="card-text">{{c.price}}</p>
+      <a href="cameras/details/{{c.id}}" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+
+
+
+{% endblock %}

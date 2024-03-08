@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="images_3 d-flex"><img src="{{ subject.image.url }}">    <a href="{% url 'edit' id=subject.id %}" class="btn btn-warning  m-auto" >EDIT</a>
+                <a href="{% url 'delete' id=subject.id %}" class="btn btn-danger  m-auto">DELETE</a></div>
+            <div class="taital_main">
+               
+            </div class="bg-danger ">
+            <h2 class="best_text">{{subject.brand}}</h2>
+            <h2 class="dolar_text"><span style="color: #874ce0;">{{subject.price}}</span></h2>
+            <p class="lorem_ipsum_text">{{subject.description}}</p>
+          
+            
+       
+           
+        </div>
+        
+        
+    </div>
+    
+</div>
+
+{% endblock %}
+
+
+
+

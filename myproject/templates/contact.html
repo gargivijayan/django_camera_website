@@ -1,0 +1,42 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- contact section start -->
+
+<div class="contact_section layout_padding">
+    <div class="container">
+        <h1 class="get_text">Get In Touch</h1>
+        <div class="mail_section">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="" class="input_text" placeholder="Name" name="Name">
+                    <input type="" class="input_text" placeholder="Phone Number" name="Phone Number">
+                </div>
+                <div class="col-md-6">
+                    <input type="" class="input_text" placeholder="Email" name="Email">
+                    <select>
+                        <option value="volvo">Type Of Camera</option>
+                        <option value="saab">HD Camera</option>
+                        <option value="opel">Video Camera</option>
+                        <option value="audi">Images</option>
+                    </select>
+                </div>
+            </div>
+            <textarea name="comment" class="massage_box" form="usrform">Your Words Message...</textarea>
+            <div class="send_bt">
+                <div class="send_text"><a href="#">SEND</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding_0">
+    <div class="map_main">
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="508" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<!-- contact section end -->
+
+{% endblock %}

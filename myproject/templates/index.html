@@ -1,0 +1,156 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<!--top header section start -->
+
+	<!-- header section end -->
+	<!-- banner section stert -->
+	<div class="banner_section">
+		<div class="container-fluid">
+			<section class="slide-wrapper">
+                <div class="container-fluid">
+	            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                       <li data-target="#myCarousel" data-slide-to="1"></li>
+                       <li data-target="#myCarousel" data-slide-to="2"></li>
+                       <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+				            <div class="col-md-7">
+					            <div class="images_1"><img src="{% static 'images/banner-bg.png' %}"></div>
+					            <div class="banner_main">
+						            <div class="banner_left">
+							            <div class="red_bt"><a href="">Read More</a></div>
+						            </div>
+						        <div class="banner_right">
+						        	<h1 class="usiing_text">Using Cool camera</h1>
+							        <p class="point_text">point of using Lorem Ipsum is that it has a more-or-less  
+                                    distribution of letters,</p>
+						        </div>
+					        </div>
+				        </div>
+				            <div class="col-md-5">
+					            <div class="images_2"><img src="{% static 'images/img-1.png' %}"></div>
+				            </div>
+			            </div>
+                </div>
+                <div class="carousel-item">
+                   <div class="row">
+				       <div class="col-md-7">
+					       <div class="images_1"><img src="{% static 'images/banner-bg.png' %}"></div>
+				        	<div class="banner_main">
+					     	    <div class="banner_left">
+							        <div class="red_bt"><a href="#">Read More</a></div>
+						        </div>
+						        <div class="banner_right">
+							        <h1 class="usiing_text">Using Cool camera</h1>
+							        <p class="point_text">point of using Lorem Ipsum is that it has a more-or-less  
+                                    distribution of letters,</p>
+						        </div>
+					        </div>
+				        </div>
+				        <div class="col-md-5">
+					        <div class="images_2"><img src="{% static 'images/img-1.png' %}"></div>
+				        </div>
+			        </div>
+                </div>
+                <div class="carousel-item">
+                   <div class="row">
+				       <div class="col-md-7">
+					       <div class="images_1"><img src="{% static 'images/banner-bg.png' %}"></div>
+				        	<div class="banner_main">
+					     	    <div class="banner_left">
+							        <div class="red_bt"><a href="#">Read More</a></div>
+						        </div>
+						        <div class="banner_right">
+							        <h1 class="usiing_text">Using Cool camera</h1>
+							        <p class="point_text">point of using Lorem Ipsum is that it has a more-or-less  
+                                    distribution of letters,</p>
+						        </div>
+					        </div>
+				        </div>
+				        <div class="col-md-5">
+					        <div class="images_2"><img src="{% static 'images/img-1.png' %}"></div>
+				        </div>
+			        </div>
+                </div>
+                <div class="carousel-item">
+                   <div class="row">
+				       <div class="col-md-7">
+					       <div class="images_1"><img src="{% static 'images/banner-bg.png' %}"></div>
+				        	<div class="banner_main">
+					     	    <div class="banner_left">
+							        <div class="red_bt"><a href="#">Read More</a></div>
+						        </div>
+						        <div class="banner_right">
+							        <h1 class="usiing_text">Using Cool camera</h1>
+							        <p class="point_text">point of using Lorem Ipsum is that it has a more-or-less  
+                                    distribution of letters,</p>
+						        </div>
+					        </div>
+				        </div>
+				        <div class="col-md-5">
+					        <div class="images_2"><img src="{% static 'images/img-1.png' %}"></div>
+				        </div>
+			        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+			
+		</div>
+	</div>
+	<!-- banner section end -->
+
+
+	<!-- contact section start -->
+	<div class="contact_section layout_padding">
+		<div class="container">
+			<h1 class="get_text">Get In Touch</h1>
+			<div class="mail_section">
+				<div class="row">
+					<div class="col-md-6">
+						<input type="" class="input_text" placeholder="Name" name="Name">
+						<input type="" class="input_text" placeholder="Phone Number" name="Phone Number">
+					</div>
+					<div class="col-md-6">
+						<input type="" class="input_text" placeholder="Email" name="Email">
+						<select>
+                            <option value="volvo">Type Of Camera</option>
+                            <option value="saab">H D Camera</option>
+                            <option value="opel">Videeo Camera</option>
+                            <option value="audi">Images</option>
+                        </select>
+					</div>
+				</div>
+				<textarea name="comment" class="massage_box" form="usrform">You Wprds Message...</textarea>
+				<div class="send_bt">
+					<div class="send_text"><a href="#">SEND</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="container-fluid padding_0">
+    	<div class="map_main">
+    		<div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="508" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+            </div>
+    	</div>
+    </div>
+	<!-- contact section end -->
+
+
+    <!-- footer section start -->
+
+    <!-- footer section end -->
+    
+
+    {% endblock %}

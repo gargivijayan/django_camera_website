@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+    <form action="" method="post" enctype="multipart/form-data" style="padding: 280px;">
+        {% csrf_token %}
+        <div style="">
+            <table class="" style="width: 30rem !important;text-align: center" >
+                <tr>
+                    <td class="fs-3"><label style="font-family:'Teko'; font-size: 40px; text-align: center;color: rgb(11, 11, 83);">Brand</label></td>
+                    <td><input type="text" class="form-control" name="brand" value="{{subject.brand}}"></td>
+                </tr>
+                <tr>
+                    <td class="fs-3"><label style="font-family:'Teko'; font-size: 40px;color: rgb(11, 11, 83);">New Image</label></td>
+                    <td><input type="file"  class="form-control" name="image"></td>
+                </tr>
+                <tr>
+                    <td class="fs-3"><label style="font-family:'Teko'; font-size: 40px; text-align: center;color: rgb(11, 11, 83);">Price</label></td>
+                    <td><input type="text" class="form-control" name="price" value="{{subject.price}}"></td>
+                </tr>
+                <tr>
+                    <td class="fs-3"><label  style="font-family:'Teko'; font-size: 40px;color: rgb(11, 11, 83);">Description</label></td>
+                    <td><textarea input type="text"  class="form-control" name="description" value=" {{subject.description}}"rows="7" cols="30">{{subject.description}}</textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="">
+                        <button type="submit" class="btn btn-info d-block m-auto mt-5">SUBMIT</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    
+
+
+{% endblock %}
+
